@@ -2,6 +2,10 @@
 
 A blog and resource platform for Latin American programmers. IPROGRAM aims to support developers from LATAM by sharing courses, tools, history, industry news, tutorials, and community stories to help them grow on a global stage.
 
+## Ver la página
+
+[https://dinnocenzo.github.io/iprogram-blog/blogpost.html](https://dinnocenzo.github.io/iprogram-blog/blogpost.html)
+
 ## Tech Stack
 
 - HTML5
