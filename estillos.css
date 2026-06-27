@@ -40,3 +40,33 @@ body
 {
     font-size: 20px;
 }
+
+#noticia
+{
+    background-color: rgb(240, 240, 255);
+    border-left: 5px solid rgb(26, 29, 175);
+    padding: 1em 1.5em;
+    margin: 1em;
+}
+
+#noticia h2
+{
+    color: rgb(26, 29, 175);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.3em;
+}
+
+#noticia h3
+{
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#noticia .fecha
+{
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+    margin-top: 0;
+}
