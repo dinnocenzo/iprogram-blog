@@ -1,9 +1,8 @@
 body
 {
-    color:rgb(0, 0, 0);
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(253, 253, 253);
+    color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -11,52 +10,100 @@ body
 
 #cabecera
 {
-    background: rgb(234, 13, 241);
-    box-shadow: 0px 2px 20px 0px black;
-    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(234, 13, 241);
+    color: rgb(20, 20, 20);
     font-weight: bold;
-    font-size: 20px;
-    margin: 0%;
-    padding: 1.5em;
+    font-size: 22px;
+    padding: 1.2em 2em;
 }
 
 #cabecera #tagline
 {
-    padding: 0 0 0 1cm;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    color: rgb(130, 130, 130);
+    margin-left: 1em;
 }
 
 #nav
 {
-    background: rgb(26, 29, 175);
-    padding: 0.6em 0;
+    padding: 0.6em 2em;
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 #nav a
 {
-    color: white;
+    color: rgb(20, 20, 20);
     text-decoration: none;
     font-size: 14px;
-    padding: 0.5em 1.5em;
-    display: inline-block;
+    margin-right: 1.5em;
 }
 
 #nav a:hover
 {
-    background: rgba(255,255,255,0.15);
+    color: rgb(234, 13, 241);
 }
 
 #container
 {
-    width: 70%;
-    padding: 0;
+    width: 660px;
+    margin: 3em auto;
     text-align: left;
-    border: 5px solid rgb(26, 29, 175);
-    margin: 0 auto;
 }
 
 #container h1
 {
     font-size: 20px;
+    margin-bottom: 1.2em;
+}
+
+#container p, #container ul
+{
+    line-height: 1.8;
+    color: rgb(60, 60, 60);
+}
+
+#container li
+{
+    margin-bottom: 0.3em;
+}
+
+.noticia-card
+{
+    border-top: 2px solid rgb(234, 13, 241);
+    padding-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.noticia-card .etiqueta
+{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(234, 13, 241);
+}
+
+.noticia-card h2
+{
+    font-size: 18px;
+    margin: 0.4em 0 0.3em 0;
+    line-height: 1.4;
+}
+
+.noticia-card .fecha
+{
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+    margin: 0 0 1em 0;
+}
+
+.noticia-card .destacado
+{
+    border-left: 3px solid rgb(234, 13, 241);
+    padding-left: 1em;
+    margin: 1.2em 0;
+    color: rgb(40, 40, 40);
+    font-size: 15px;
 }
