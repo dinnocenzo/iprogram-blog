@@ -40,3 +40,47 @@ body
 {
     font-size: 20px;
 }
+
+#noticias
+{
+    padding: 1em 1.5em 1.5em;
+    border-top: 3px solid rgb(234, 13, 241);
+}
+
+#noticias h2
+{
+    font-size: 20px;
+    color: rgb(26, 29, 175);
+    margin-bottom: 1em;
+}
+
+.noticia
+{
+    background-color: rgb(245, 245, 255);
+    border-left: 4px solid rgb(234, 13, 241);
+    border-radius: 4px;
+    padding: 0.8em 1em;
+    margin-bottom: 1.2em;
+}
+
+.noticia h3
+{
+    font-size: 16px;
+    margin: 0.2em 0 0.5em;
+    color: rgb(26, 29, 175);
+}
+
+.noticia p
+{
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.noticia-fecha
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(150, 0, 160);
+    text-transform: uppercase;
+}
