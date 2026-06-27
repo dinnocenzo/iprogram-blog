@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Noticias - IPROGRAM</title>
+        <link rel="stylesheet" href="estillos.css" />
+        <style>
+            #post { padding: 1em 1.5em; }
+            .noticia-card {
+                border: 2px solid rgb(26, 29, 175);
+                border-radius: 8px;
+                padding: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            .noticia-card .etiqueta {
+                display: inline-block;
+                background: rgb(234, 13, 241);
+                color: white;
+                font-size: 11px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding: 3px 10px;
+                border-radius: 20px;
+                margin-bottom: 0.8em;
+            }
+            .noticia-card h2 {
+                font-size: 18px;
+                color: rgb(26, 29, 175);
+                margin: 0 0 0.3em 0;
+            }
+            .noticia-card .fecha {
+                font-size: 12px;
+                color: rgb(120, 120, 120);
+                margin: 0 0 1em 0;
+            }
+            .noticia-card .destacado {
+                background: rgb(240, 240, 255);
+                border-left: 4px solid rgb(234, 13, 241);
+                padding: 0.8em 1em;
+                margin: 1em 0;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="cabecera">
+                IPROGRAM
+                <span id="tagline"> blog para programadores</span>
+            </div>
+            <div id="nav">
+                <a href="blogpost.html">Inicio</a>
+                <a href="noticias.html">Noticias</a>
+            </div>
+            <div id="post">
+                <h1>Noticias</h1>
+
+                <div class="noticia-card">
+                    <span class="etiqueta">Inteligencia Artificial</span>
+                    <h2>La IA ya escribe mas codigo que los humanos: que significa esto para los programadores de LATAM</h2>
+                    <p class="fecha">27 de junio de 2026</p>
+                    <p>
+                        Segun los ultimos reportes de las principales empresas tecnologicas, mas del <b>50% del codigo</b> en produccion
+                        esta siendo generado o asistido por herramientas de Inteligencia Artificial como GitHub Copilot, Claude y ChatGPT.
+                        Este cambio radical en la industria plantea tanto oportunidades como desafios para los desarrolladores de la region.
+                    </p>
+                    <div class="destacado">
+                        ¿Que habilidades son mas valoradas ahora? Saber leer, revisar y corregir codigo generado por IA se convirtio en la habilidad esencial del momento.
+                    </div>
+                    <p>
+                        Para los programadores de LATAM esto representa una gran oportunidad: la barrera del idioma se reduce, las herramientas
+                        de IA ayudan a completar documentacion en ingles, y el acceso a tecnologia de punta ya no depende de donde vivis.
+                    </p>
+                    <p>
+                        En IPROGRAM vamos a estar cubriendo esta revolucion de cerca. <b>Proximamente:</b> tutoriales de como usar IA en tu flujo de trabajo diario.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
