@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juegos — IPROGRAM</title>
+    <meta name="description" content="Minijuegos gratuitos para aprender los fundamentos de la programación en español, practicando inglés técnico." />
+    <link rel="stylesheet" href="estillos.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="index.html">IPROGRAM<span class="punto">.</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="blogpost.html">Blog</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="juegos.html" class="activo">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <main class="seccion">
+        <div class="seccion-titulo">
+            <h1>Zona de <span class="texto-gradiente">juegos</span> 🎮</h1>
+            <p>Elige un juego y practica los fundamentos. Cada partida es distinta: repite las veces que quieras, es gratis.</p>
+        </div>
+
+        <div class="selector-juegos" id="selector-juegos">
+            <button class="tarjeta tarjeta-juego" data-juego="memoria">
+                <span class="icono">🧠</span>
+                <h3>Memoria Bilingüe</h3>
+                <p>Encuentra las parejas: cada término en <span class="en">English</span> con su significado en español.</p>
+                <p class="dificultad">Nivel: principiante · Practica: vocabulario</p>
+            </button>
+            <button class="tarjeta tarjeta-juego" data-juego="quiz">
+                <span class="icono">⚡</span>
+                <h3>Quiz Relámpago</h3>
+                <p>¿Qué imprime este código? Lee, piensa y responde antes de que la duda te gane.</p>
+                <p class="dificultad">Nivel: principiante · Practica: lógica</p>
+            </button>
+            <button class="tarjeta tarjeta-juego" data-juego="bug">
+                <span class="icono">🐛</span>
+                <h3>Caza el Bug</h3>
+                <p>Hay un error <span class="en">(bug)</span> escondido en el código. Haz clic en la línea culpable.</p>
+                <p class="dificultad">Nivel: intermedio · Practica: lectura de código</p>
+            </button>
+            <button class="tarjeta tarjeta-juego" data-juego="ordena">
+                <span class="icono">🧩</span>
+                <h3>Ordena el Código</h3>
+                <p>Las líneas están revueltas. Haz clic en orden para armar un programa que funcione.</p>
+                <p class="dificultad">Nivel: intermedio · Practica: secuencias</p>
+            </button>
+        </div>
+
+        <div id="zona-juego" hidden>
+            <div class="juego-panel">
+                <div class="juego-cabecera">
+                    <h2 id="titulo-juego"></h2>
+                    <div style="display:flex; gap:0.6rem; align-items:center;">
+                        <span class="puntaje" id="puntaje">⭐ 0</span>
+                        <button class="btn btn-secundario" id="volver" style="padding:0.5em 1em;">← Elegir otro juego</button>
+                    </div>
+                </div>
+                <div class="progreso"><div id="barra-progreso"></div></div>
+                <div id="contenido-juego"></div>
+                <p class="mensaje-juego" id="mensaje-juego"></p>
+                <p class="pista-en" id="pista-en"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>IPROGRAM</b> — hecho con <span class="corazon">♥</span> para Venezuela y toda Latinoamérica.</p>
+        <p>¿Se te ocurre otro juego? Cuéntanos en el <a href="blogpost.html">blog</a>.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/juegos.js"></script>
+</body>
+</html>

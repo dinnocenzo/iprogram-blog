@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPROGRAM — Aprende a programar jugando, gratis y en español</title>
+    <meta name="description" content="Plataforma educativa gratuita para la comunidad venezolana y latina. Aprende los fundamentos de la programación con juegos, en español y practicando inglés al mismo tiempo." />
+    <link rel="stylesheet" href="estillos.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="index.html">IPROGRAM<span class="punto">.</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="blogpost.html">Blog</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="juegos.html" class="destacado">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div>
+            <span class="etiqueta-hero">✨ 100% gratuito · Free forever</span>
+            <h1>Aprende a <span class="texto-gradiente">programar jugando</span>, en español</h1>
+            <p class="sub">
+                Una plataforma educativa gratuita para la comunidad <b>venezolana</b> y <b>latina</b>.
+                Domina los fundamentos de la programación con minijuegos, mientras aprendes el
+                <span class="en" title="inglés">English</span> que la industria usa todos los días.
+            </p>
+            <div class="acciones">
+                <a class="btn btn-principal" href="juegos.html">🎮 Empezar a jugar</a>
+                <a class="btn btn-secundario" href="#ruta">Ver la ruta de aprendizaje</a>
+            </div>
+        </div>
+
+        <div class="ventana-codigo">
+            <div class="barra"><span class="r"></span><span class="a"></span><span class="v"></span></div>
+            <pre id="codigo-animado"></pre>
+        </div>
+    </header>
+
+    <section class="seccion" id="mision">
+        <div class="mision reveal">
+            <div class="banderas">🇻🇪 🇨🇴 🇦🇷 🇲🇽 🇵🇪 🇨🇱 🇪🇨 🇧🇴</div>
+            <h2>Nuestra misión: educación sin barreras</h2>
+            <p class="muted">
+                Creemos que aprender a programar puede cambiar vidas. Por eso IPROGRAM es y será
+                siempre <b>gratuito</b>: para que cualquier persona en Venezuela y Latinoamérica,
+                sin importar su situación económica, pueda construirse un futuro en la tecnología.
+                Solo necesitas ganas y una conexión a internet.
+            </p>
+        </div>
+    </section>
+
+    <section class="seccion" id="como">
+        <div class="seccion-titulo reveal">
+            <h2>¿Cómo funciona?</h2>
+            <p>Nada de clases aburridas. Aprendes los mecanismos básicos de la programación con juegos cortos que puedes repetir cuantas veces quieras.</p>
+        </div>
+        <div class="grilla">
+            <div class="tarjeta reveal">
+                <span class="icono">🎮</span>
+                <h3>Aprende jugando</h3>
+                <p>Cada concepto se practica con un minijuego: memoria, quizzes, cazar errores y armar programas. Jugar es la forma más natural de aprender.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-1">
+                <span class="icono">🗣️</span>
+                <h3>Español + English</h3>
+                <p>Todo se explica en español, pero cada término técnico aparece también en inglés. Aprendes dos habilidades al mismo tiempo, sin darte cuenta.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-2">
+                <span class="icono">🧠</span>
+                <h3>Fundamentos sólidos</h3>
+                <p>Variables, condicionales, bucles y funciones: los mecanismos que usa <i>todo</i> lenguaje de programación. Si los dominas, puedes aprender cualquiera.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-3">
+                <span class="icono">💸</span>
+                <h3>Gratis de verdad</h3>
+                <p>Sin suscripciones, sin niveles premium, sin tarjeta de crédito. Este proyecto existe para ayudar a nuestra gente, no para cobrarle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="ruta">
+        <div class="seccion-titulo reveal">
+            <h2>Tu ruta de aprendizaje</h2>
+            <p>Sigue estos pasos en orden. Cada uno tiene juegos para practicar en la sección de <a href="juegos.html">Juegos</a>.</p>
+        </div>
+        <div class="ruta">
+            <div class="paso reveal">
+                <h3>Variables <span class="en" title="en inglés">(variables)</span></h3>
+                <p>Las cajitas donde el programa guarda información: números, textos y más. Es el primer ladrillo de todo programa.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Condicionales <span class="en" title="en inglés">(if / else)</span></h3>
+                <p>Enseñale a tu programa a tomar decisiones: "si pasa esto, haz aquello; si no, haz esto otro".</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Bucles <span class="en" title="en inglés">(loops)</span></h3>
+                <p>Repetir tareas sin escribir el mismo código mil veces. El superpoder de la computadora es no cansarse nunca.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Funciones <span class="en" title="en inglés">(functions)</span></h3>
+                <p>Empaqueta código con nombre propio para reutilizarlo donde quieras. Así se construyen los programas grandes.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Tu primer proyecto <span class="en" title="en inglés">(your first project)</span></h3>
+                <p>Combina todo lo anterior y crea algo tuyo. En el <a href="blogpost.html">blog</a> te acompañamos con ideas, recursos y la comunidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="vocabulario">
+        <div class="seccion-titulo reveal">
+            <h2>Vocabulario del día 🇬🇧</h2>
+            <p>El inglés técnico que vas a ver en documentación, tutoriales y ofertas de trabajo. En los juegos lo practicas de memoria.</p>
+        </div>
+        <div class="vocab-grid">
+            <div class="vocab reveal"><span class="es">bucle</span><span class="in">loop</span></div>
+            <div class="vocab reveal"><span class="es">arreglo / lista</span><span class="in">array</span></div>
+            <div class="vocab reveal reveal-retraso-1"><span class="es">cadena de texto</span><span class="in">string</span></div>
+            <div class="vocab reveal reveal-retraso-1"><span class="es">error / fallo</span><span class="in">bug</span></div>
+            <div class="vocab reveal reveal-retraso-2"><span class="es">depurar</span><span class="in">debug</span></div>
+            <div class="vocab reveal reveal-retraso-2"><span class="es">solicitud</span><span class="in">request</span></div>
+            <div class="vocab reveal reveal-retraso-3"><span class="es">desplegar</span><span class="in">deploy</span></div>
+            <div class="vocab reveal reveal-retraso-3"><span class="es">devolver</span><span class="in">return</span></div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="mision reveal">
+            <h2>¿Listo para tu primera partida?</h2>
+            <p class="muted">Cuatro juegos te esperan. No necesitas saber nada de programación para empezar.</p>
+            <div class="acciones" style="justify-content: center;">
+                <a class="btn btn-principal" href="juegos.html">🚀 Ir a los juegos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><b>IPROGRAM</b> — hecho con <span class="corazon">♥</span> para Venezuela y toda Latinoamérica.</p>
+        <p>Proyecto educativo gratuito y de código abierto <span class="en">(free &amp; open source)</span>.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

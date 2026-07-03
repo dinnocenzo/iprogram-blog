@@ -1,38 +1,62 @@
-# IPROGRAM
+# IPROGRAM 🎮
 
-A blog and resource platform for Latin American programmers. IPROGRAM aims to support developers from LATAM by sharing courses, tools, history, industry news, tutorials, and community stories to help them grow on a global stage.
+**Aprende a programar jugando — gratis, en español, practicando inglés.**
+
+IPROGRAM es una plataforma educativa **100% gratuita** para la sociedad venezolana
+y latina. Enseña los mecanismos básicos para volverte programador (variables,
+condicionales, bucles y funciones) a través de minijuegos interactivos. Todo el
+contenido está en español, pero cada término técnico aparece también en inglés,
+para que aprendas el vocabulario que usa la industria mientras juegas.
+
+🔗 **Demo en vivo:** https://dinnocenzo.github.io/iprogram-blog/
+
+## Los juegos
+
+| Juego | Practica |
+|---|---|
+| 🧠 Memoria Bilingüe | Vocabulario técnico English ↔ Español |
+| ⚡ Quiz Relámpago | Lógica: ¿qué imprime este código? |
+| 🐛 Caza el Bug | Lectura de código y detección de errores |
+| 🧩 Ordena el Código | Secuencias y estructura de programas |
 
 ## Tech Stack
 
-- HTML5
-- CSS3
+- HTML5 + CSS3 (variables, keyframes, `prefers-reduced-motion`)
+- JavaScript puro (sin frameworks ni build tools)
+- Animaciones: reveal on scroll (IntersectionObserver), efecto de escritura, gradientes animados
 
-## Project Structure
+## Estructura del proyecto
 
 ```
-IPROGRAM/
-├── blogpost.html   # Main blog post page
-├── estillos.css    # Stylesheet for the site
-├── historia.txt    # Author background story
-├── .gitignore      # Git ignore rules
-├── LICENSE         # MIT License
-└── README.md       # Project documentation
+iprogram-blog/
+├── index.html      # Landing: misión, ruta de aprendizaje, vocabulario
+├── juegos.html     # Zona de juegos (4 minijuegos)
+├── blogpost.html   # Blog de la comunidad
+├── noticias.html   # Noticias de tecnología para LATAM
+├── estillos.css    # Estilos y animaciones del sitio
+├── js/
+│   ├── main.js     # Animaciones globales (scroll reveal, typing, nav móvil)
+│   └── juegos.js   # Lógica y datos de los juegos
+├── LICENSE         # Licencia MIT
+└── README.md
 ```
 
-## Setup / Installation
+## Cómo verlo localmente
 
-No build tools or dependencies are required. This is a static HTML project.
+No necesita instalación ni dependencias:
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/dinnocenzo/IPROGRAM.git
-   ```
-2. Open `blogpost.html` in any modern web browser.
+```
+git clone https://github.com/dinnocenzo/iprogram-blog.git
+```
 
-## Usage
+Abre `index.html` en cualquier navegador moderno.
 
-Simply open `blogpost.html` in a browser to view the IPROGRAM blog platform. The page is styled with `estillos.css` and requires no server or build step.
+## Misión
 
-## License
+Creemos que aprender a programar puede cambiar vidas. Este proyecto existe para
+que cualquier persona en Venezuela y Latinoamérica, sin importar su situación
+económica, pueda construirse un futuro en la tecnología. Siempre será gratuito.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Licencia
+
+MIT — ver [LICENSE](LICENSE).

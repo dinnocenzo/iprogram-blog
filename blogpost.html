@@ -1,48 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Bienvenido a IPROGRAM</title>
-        <link rel="stylesheet" href="estillos.css" />
-    </head>
-    <body>
-        <div id="container">
-            <div id="cabecera">
-                IPROGRAM
-                <span id="tagline"> blog para programadores</span>
-            </div>
-            <div id="nav">
-                <a href="blogpost.html">Inicio</a>
-                <a href="noticias.html">Noticias</a>
-            </div>
-            <div id="post">
-                <h1>Plataforma de programadores de Latam para el mundo</h1>
-                <p>
-                    Esto una pagina que te va a apoyar en tu camino como <b>Programador</b> de <b>latam</b>.
-                    Se preguntaran como, bueno les voy a contar mi historia de una forma breve y interactiva.
-                </p>
-                <p>
-                    Esta pagina ademas de recomendarte curso, herramientas, historia, empresas, perifericos, trabajos, noticias, tutoriales, etc todo referente a la programacion.
-                </p>
-                <p>
-                    Tambien vamos a tener invitados reconocidos en la industria de la <b>Programacion</b> para que les muestren sus habilidades, secretos, trucos o recuerdos.
-                </p>
-                <p>
-                    Si quieres participar en nuestro foro y ir escalando en el mundo de los programadores mas reconocidos sin importar tu edad registrate y cuentanos tu historia para inspirar a las nuevas generaciones.
-                </p>
-                <p> los propositos </p>
-                    <ul>
-                        <li>Apoyo a como iniciarte en el mundo</li>
-                        <li>Dar a conocer a personalidades reconocidas y no reconocidas del mundo de la programacion </li>
-                        <li>Crear una comunidad de creadores que este en constante crecimiento y apoyo</li>
-                        <li>Ayudar al crecimiento de la programacion en LATAM</li>
-                        <li>Conocer parte de la historia de las personas que quieran apoyar </li>
-                        <li>Buscar grandes promesas de LATAM para darlas a crecer</li>
-                        <li>Tutoriales</li>
-                        <li>Clases</li>
-                        <li>Productos</li>
-                        <li>Al conseguir el apoyo de las marcas para ayudar a crecer a los usuarios que quieran subir a otro nivel</li>
-                    </ul>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — IPROGRAM</title>
+    <meta name="description" content="El blog de IPROGRAM: historias, recursos y comunidad para programadores de Venezuela y Latinoamérica." />
+    <link rel="stylesheet" href="estillos.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="index.html">IPROGRAM<span class="punto">.</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="blogpost.html" class="activo">Blog</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="juegos.html" class="destacado">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <main class="articulo">
+        <span class="etiqueta reveal">Comunidad</span>
+        <h1 class="reveal">Plataforma de programadores de <span class="texto-gradiente">LATAM</span> para el mundo</h1>
+
+        <div class="reveal">
+            <p>
+                Esta es una página que te va a apoyar en tu camino como <b>programador</b> de <b>LATAM</b>.
+                ¿Se preguntarán cómo? Bueno, les voy a contar mi historia de una forma breve e interactiva.
+            </p>
+            <p>
+                Esta página, además de recomendarte cursos, herramientas, historia, empresas, periféricos,
+                trabajos, noticias y tutoriales, ahora también te enseña a programar <b>jugando</b>:
+                visita la sección de <a href="juegos.html">Juegos</a> y aprende los fundamentos
+                <span class="en" title="en inglés">(the basics)</span> en español mientras practicas inglés.
+            </p>
+            <p>
+                También vamos a tener invitados reconocidos en la industria de la <b>programación</b>
+                para que les muestren sus habilidades, secretos, trucos o recuerdos.
+            </p>
+            <p>
+                Si quieres participar en nuestro foro e ir escalando en el mundo de los programadores más
+                reconocidos, sin importar tu edad, regístrate y cuéntanos tu historia para inspirar a las
+                nuevas generaciones.
+            </p>
+        </div>
+
+        <div class="noticia-card reveal">
+            <h2>Nuestros propósitos</h2>
+            <ul>
+                <li>Educación en programación <b>gratuita</b> para la sociedad venezolana y latina.</li>
+                <li>Enseñar los mecanismos básicos para volverte programador, con juegos.</li>
+                <li>Aprender en español mientras practicas el inglés técnico de la industria.</li>
+                <li>Apoyarte en cómo iniciarte en el mundo de la programación.</li>
+                <li>Dar a conocer a personalidades reconocidas y no reconocidas del mundo de la programación.</li>
+                <li>Crear una comunidad de creadores en constante crecimiento y apoyo.</li>
+                <li>Ayudar al crecimiento de la programación en LATAM.</li>
+                <li>Conocer la historia de las personas que quieran compartirla.</li>
+                <li>Buscar grandes promesas de LATAM y ayudarlas a crecer.</li>
+                <li>Tutoriales, clases y recursos.</li>
+                <li>Conseguir el apoyo de marcas para ayudar a los usuarios que quieran subir de nivel.</li>
+            </ul>
+        </div>
+
+        <div class="mision reveal">
+            <h2>Aprende jugando, hoy mismo</h2>
+            <p class="muted">Cuatro minijuegos gratuitos para dominar variables, condicionales, bucles y funciones.</p>
+            <div class="acciones" style="justify-content: center;">
+                <a class="btn btn-principal" href="juegos.html">🎮 Ir a los juegos</a>
             </div>
         </div>
-    </body>
+    </main>
+
+    <footer>
+        <p><b>IPROGRAM</b> — hecho con <span class="corazon">♥</span> para Venezuela y toda Latinoamérica.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
