@@ -40,6 +40,73 @@ body {
 
 ::selection { background: var(--fucsia); color: white; }
 
+/* ---------- Fondo animado global ---------- */
+/* Capa fija detrás de todo: aurora de gradientes + símbolos de código flotando.
+   La genera js/main.js en todas las páginas. */
+
+.fondo-animado {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fondo-animado::before,
+.fondo-animado::after {
+    content: '';
+    position: absolute;
+    width: 65vmax;
+    height: 65vmax;
+    border-radius: 50%;
+    opacity: 0.22;
+    will-change: transform;
+}
+
+.fondo-animado::before {
+    background: radial-gradient(circle, var(--fucsia), transparent 60%);
+    top: -25vmax;
+    left: -15vmax;
+    animation: aurora-1 26s ease-in-out infinite alternate;
+}
+
+.fondo-animado::after {
+    background: radial-gradient(circle, var(--indigo), transparent 60%);
+    bottom: -25vmax;
+    right: -15vmax;
+    animation: aurora-2 32s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(30vw, 18vh) scale(1.25); }
+    100% { transform: translate(55vw, 5vh) scale(0.9); }
+}
+
+@keyframes aurora-2 {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(-28vw, -20vh) scale(1.2); }
+    100% { transform: translate(-50vw, -8vh) scale(1.05); }
+}
+
+.particula {
+    position: absolute;
+    bottom: -8vh;
+    font-family: 'Cascadia Code', Consolas, monospace;
+    font-weight: 700;
+    color: var(--indigo);
+    opacity: 0;
+    animation: subir linear infinite;
+    will-change: transform;
+}
+
+@keyframes subir {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+    8%   { opacity: var(--op, 0.35); }
+    90%  { opacity: var(--op, 0.35); }
+    100% { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
+}
+
 /* ---------- Tipografía ---------- */
 
 h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em 0; }

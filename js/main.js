@@ -1,4 +1,31 @@
-// IPROGRAM — animaciones globales: reveal on scroll, typing del hero, nav móvil.
+// IPROGRAM — animaciones globales: fondo animado, reveal on scroll, typing del hero, nav móvil.
+
+// ---------- Fondo animado (aurora + símbolos de código flotando) ----------
+(function crearFondoAnimado() {
+    const fondo = document.createElement('div');
+    fondo.className = 'fondo-animado';
+    fondo.setAttribute('aria-hidden', 'true');
+    document.body.prepend(fondo);
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const simbolos = ['</>', '{ }', ';', '=>', 'if', 'for', '()', '&&', '0', '1', '#', '=='];
+    const colores = ['var(--indigo)', 'var(--fucsia)', 'var(--cyan)', 'var(--amarillo)'];
+    const cantidad = 16;
+
+    for (let i = 0; i < cantidad; i++) {
+        const p = document.createElement('span');
+        p.className = 'particula';
+        p.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+        p.style.left = Math.random() * 100 + 'vw';
+        p.style.fontSize = 0.7 + Math.random() * 1.1 + 'rem';
+        p.style.color = colores[Math.floor(Math.random() * colores.length)];
+        p.style.setProperty('--op', (0.1 + Math.random() * 0.3).toFixed(2));
+        p.style.animationDuration = 14 + Math.random() * 18 + 's';
+        p.style.animationDelay = -Math.random() * 30 + 's';
+        fondo.appendChild(p);
+    }
+})();
 
 // ---------- Reveal on scroll ----------
 const observador = new IntersectionObserver(
