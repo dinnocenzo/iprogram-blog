@@ -1,36 +1,35 @@
 body
 {
-    color:rgb(0, 0, 0);
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(253, 253, 253);
+    color: rgb(30, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 246, 247);
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 3em 0;
 }
 
 #cabecera
 {
-    background: rgb(0, 188, 212);
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.3);
-    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(0, 188, 212);
+    color: rgb(30, 30, 30);
     font-weight: bold;
-    font-size: 20px;
-    margin: 0%;
-    padding: 1.5em;
+    font-size: 22px;
+    padding: 1.2em 2em;
 }
 
 #cabecera #tagline
 {
-    padding: 0 0 0 1cm;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    color: rgb(150, 150, 150);
+    margin-left: 1em;
 }
 
 #nav
 {
     background: rgb(90, 90, 95);
-    padding: 0.6em 0;
+    padding: 0.6em 2em;
 }
 
 #nav a
@@ -38,25 +37,78 @@ body
     color: white;
     text-decoration: none;
     font-size: 14px;
-    padding: 0.5em 1.5em;
-    display: inline-block;
+    margin-right: 1.5em;
 }
 
 #nav a:hover
 {
-    background: rgba(255,255,255,0.15);
+    color: rgb(0, 188, 212);
 }
 
 #container
 {
-    width: 70%;
-    padding: 0;
+    width: 660px;
+    margin: 2.5em auto;
     text-align: left;
-    border: 5px solid rgb(90, 90, 95);
-    margin: 0 auto;
 }
 
 #container h1
 {
     font-size: 20px;
+    color: rgb(90, 90, 95);
+    border-bottom: 2px solid rgb(0, 188, 212);
+    padding-bottom: 0.4em;
+    display: inline-block;
+}
+
+#container p, #container ul
+{
+    line-height: 1.8;
+    color: rgb(60, 60, 60);
+}
+
+#container li
+{
+    margin-bottom: 0.3em;
+}
+
+.noticia-card
+{
+    border-top: 2px solid rgb(0, 188, 212);
+    padding-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.noticia-card .etiqueta
+{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(0, 188, 212);
+}
+
+.noticia-card h2
+{
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+    margin: 0.4em 0 0.3em 0;
+    line-height: 1.4;
+}
+
+.noticia-card .fecha
+{
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+    margin: 0 0 1em 0;
+}
+
+.noticia-card .destacado
+{
+    border-left: 3px solid rgb(0, 188, 212);
+    padding-left: 1em;
+    margin: 1.2em 0;
+    color: rgb(40, 40, 40);
+    font-size: 15px;
+    background: rgb(237, 252, 255);
 }
