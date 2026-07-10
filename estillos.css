@@ -11,9 +11,9 @@ body
 
 #cabecera
 {
-    background: rgb(234, 13, 241);
-    box-shadow: 0px 2px 20px 0px black;
-    color: rgb(0, 0, 0);
+    background: rgb(0, 188, 212);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.3);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     margin: 0%;
@@ -29,7 +29,7 @@ body
 
 #nav
 {
-    background: rgb(26, 29, 175);
+    background: rgb(90, 90, 95);
     padding: 0.6em 0;
 }
 
@@ -52,7 +52,7 @@ body
     width: 70%;
     padding: 0;
     text-align: left;
-    border: 5px solid rgb(26, 29, 175);
+    border: 5px solid rgb(90, 90, 95);
     margin: 0 auto;
 }
 
