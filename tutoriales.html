@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutoriales — IPROGRAM</title>
+    <meta name="description" content="Tutoriales gratuitos de programación en español: HTML, CSS, JavaScript, Git y más, paso a paso desde cero." />
+    <link rel="stylesheet" href="estillos.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="index.html">IPROGRAM<span class="punto">.</span></a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="blogpost.html">Blog</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="ia.html">IA</a>
+            <a href="tutoriales.html" class="activo">Tutoriales</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="juegos.html" class="destacado">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <section class="seccion">
+        <div class="seccion-titulo reveal">
+            <span class="etiqueta">Aprende paso a paso</span>
+            <h1>Tutoriales <span class="texto-gradiente">gratuitos</span></h1>
+            <p>
+                Guías en español, de lo más básico hasta temas avanzados. Pensadas para quien arranca
+                desde cero y no quiere saltarse los fundamentos.
+            </p>
+        </div>
+
+        <div class="grilla">
+            <div class="tarjeta reveal">
+                <span class="icono">🌐</span>
+                <h3>HTML y CSS desde cero</h3>
+                <p>Tu primera página web: etiquetas, estilos y cómo hacerla responsive para el celular.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-1">
+                <span class="icono">⚡</span>
+                <h3>JavaScript básico</h3>
+                <p>Variables, funciones y cómo darle vida a una página estática.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-2">
+                <span class="icono">🌿</span>
+                <h3>Git y GitHub</h3>
+                <p>Versionar tu código, trabajar con ramas <span class="en" title="ramas">(branches)</span> y publicar gratis con GitHub Pages.</p>
+            </div>
+            <div class="tarjeta reveal">
+                <span class="icono">🤖</span>
+                <h3>Usar IA en tu día a día</h3>
+                <p>Cómo sacarle provecho a las herramientas de IA sin perder el control de tu código.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-1">
+                <span class="icono">🗄️</span>
+                <h3>Tu primer backend</h3>
+                <p>Servidor, rutas y base de datos explicado sin vueltas y con ejemplos chiquitos.</p>
+            </div>
+            <div class="tarjeta reveal reveal-retraso-2">
+                <span class="icono">🎯</span>
+                <h3>Preparar entrevistas</h3>
+                <p>Qué se pregunta hoy y cómo practicar para aplicar a trabajos remotos desde LATAM.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="ruta">
+        <div class="seccion-titulo reveal">
+            <h2>La ruta recomendada</h2>
+            <p>Si no sabes por dónde empezar, sigue este orden. Cada paso se apoya en el anterior.</p>
+        </div>
+
+        <div class="ruta">
+            <div class="paso reveal">
+                <h3>Juega y entiende la lógica</h3>
+                <p class="muted">Arranca por los <a href="juegos.html">minijuegos</a>: variables, condicionales, bucles y funciones sin instalar nada.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Construye tu primera página</h3>
+                <p class="muted">HTML y CSS. Al terminar vas a tener algo tuyo publicado en internet.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Dale interactividad</h3>
+                <p class="muted">JavaScript: que tu página responda a lo que hace la persona que la visita.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Guarda y comparte tu código</h3>
+                <p class="muted">Git y GitHub, para no perder nada y para que otros vean tu trabajo.</p>
+            </div>
+            <div class="paso reveal">
+                <h3>Suma la IA a tu flujo</h3>
+                <p class="muted">Cuando ya entiendes el código, la <a href="ia.html">IA</a> te multiplica en vez de reemplazarte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="mision reveal">
+            <h2>Contenido en camino</h2>
+            <p class="muted">
+                Estamos escribiendo cada tutorial completo. Mientras tanto, la mejor forma de arrancar
+                es practicando con los juegos.
+            </p>
+            <div class="acciones" style="justify-content: center;">
+                <a class="btn btn-principal" href="juegos.html">🎮 Empezar a jugar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><b>IPROGRAM</b> — hecho con <span class="corazon">♥</span> para Venezuela y toda Latinoamérica.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
